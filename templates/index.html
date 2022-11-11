@@ -1,0 +1,108 @@
+{% extends "import.html" %} {% block content %}
+<style>
+    #textblock {
+        background-color: lightgreen;
+        width: 40vw;
+        border: 4px solid #000000;
+        padding: 10px 7px;
+        /* float: left; */
+        /* font-size: 110%; */
+        /* text-align: left; */
+        height: 600px
+    }
+</style>
+
+<center>
+    <br>
+    <div class="container">
+        <br>
+        <div style="text-align: center">
+            <h1>Brain Tumor Detection</h1>
+        </div>
+        <br/>
+        <div class="container">
+            <div class="d-flex">
+                <div class="card m-2" style="width: 50%;">
+                    <img src="https://digitalmarketingdeal.com/blog/wp-content/uploads/2022/06/understanding-brain-tumours-1280x720-1.jpg" class="card-img-top" alt="..." height="300rem" />
+                    <div class="card-body">
+                        <h5 class="card-title">What is Brain Tumor?</h5>
+                        <p class="card-text" style="text-align: justify;">
+                            A brain tumor is a mass or growth of abnormal cells in your brain. Many different types of brain tumors exist. Some brain tumors are non-cancerous (beginning), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary
+                            brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors. How quickly a brain tumor grows can vary greatly. The growth rate and location of a brain tumor
+                            determine how it will affect the function of your nervous system. Brain tumor treatment options depend on the type of brain tumor you have, as well as its size and location. A cancerous or non-cancerous mass or growth of abnormal
+                            cells in the brain. Tumors can start in the brain, or cancer elsewhere in the body can spread to the brain. Symptoms include new or increasingly intense headaches, blurred vision, loss of balance, confusion, and seizures. In
+                            some cases, there may be no symptoms. Treatments include surgery, radiation, and chemotherapy. A cancerous or non-cancerous mass or growth of abnormal cells in the brain. Tumors can start in the brain, or cancer elsewhere in
+                            the body can spread to the brain. Symptoms include new or increasingly intense headaches, blurred vision, loss of balance, confusion, and seizures. In some cases, there may be no symptoms. Treatments include surgery, radiation,
+                            and chemotherapy. A cancerous or non-cancerous mass or growth of abnormal cells in the brain. Tumors can start in the brain, or cancer elsewhere in the body can spread to the brain.
+
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 50%;">
+                    <img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2014/10/30/15/14/brain-tumor-mri-632.jpg" class="card-img-top" alt="..." height="300rem" />
+                    <div class="card-body">
+                        <h5 class="card-title">What is MRI?</h5>
+                        <p class="card-text" style="text-align: justify;">Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and
+                            radio waves to generate images of the organs in the body. MRI does not involve X-rays or the use of ionizing radiation, which distinguishes it from CT and PET scans. MRI is a medical application of nuclear magnetic resonance
+                            (NMR) which can also be used for imaging in other NMR applications, such as NMR spectroscopy. MRI is widely used in hospitals and clinics for medical diagnosis, staging, and follow-up of the disease. Compared to CT, MRI provides
+                            better contrast in images of soft tissues, e.g. in the brain or abdomen. However, it may be perceived as less comfortable by patients, due to the usually longer and louder measurements with the subject in a long, confining
+                            tube, though "Open" MRI designs mostly relieve this. Additionally, implants and other non-removable metals in the body can pose a risk and may exclude some patients from undergoing an MRI examination safely. In clinical and
+                            research MRI, hydrogen atoms are most often used to generate a macroscopic polarization that is detected by antennae close to the subject being examined.[2] Hydrogen atoms are naturally abundant in humans and other biological
+                            organisms, particularly in water and fat. For this reason, most MRI scans essentially map the location of water and fat in the body.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+
+
+
+
+
+
+        <div class="loader" style="display:none;"></div>
+
+
+        <div id="textblock" style="text-align: center">
+            <h2>Brain Tumor analysis from the MRI image</h2>
+            <div class="image-section" style="display:none;">
+                <img id="imagePreview" class="img-responsive" src="#" style="width:300px;height:300px;" /><br><br>
+                <div>
+                    <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+                </div>
+            </div>
+            <p>According to the report, the system has analyzed that</p>
+            <div class="card col-6" style="width: 50%; margin-left: auto; margin-right: auto;">
+                <div class="card-body ">
+                    <h5 class="card-title">
+                        <h3 id="result">
+                            <span> </span>
+                        </h3>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+            <br>
+    <div style="text-align: center">
+
+        <a class="btn btn-primary" href="" download>Download your report.</a>
+
+      </div>
+      <br>
+    <div style="text-align: center">
+        <a href="#" >Back to top</a>
+    </div>
+    
+
+</center>
+<br><br> {% endblock %}
