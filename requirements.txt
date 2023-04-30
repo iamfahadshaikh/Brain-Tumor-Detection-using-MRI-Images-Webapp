@@ -1,0 +1,12 @@
+pip install --upgrade pip
+pip install tensorflow
+pip install tensorflow-python
+pip install np
+pip install numpy
+pip install keras
+pip install image
+pip install cv
+pip install opencv
+pip install opencv-python
+pip install flask
+pip install model
